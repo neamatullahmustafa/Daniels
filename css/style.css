@@ -1,0 +1,2668 @@
+/* G L O B A L */
+body,
+.fontpoppins {
+
+    font-family: 'Poppins', sans-serif;
+}
+/* body{
+    transform: scale(0.5) rotateY(180deg);
+    opacity: 0;
+    transition: all 0.5s;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+samp,
+.fontmontserrat {
+    line-height: 44px;
+    font-size: 40;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #818B8A;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 800;
+    line-height: 33px;
+    font-size: 30px;
+    color: var(--BLACK-KEDAWKEDA);
+    margin-bottom: 0px;
+}
+
+.main-color {
+    color: var(--BLACK-KEDAWKEDA);
+}
+
+.color-main-bg {
+    background-color: var(--BLACK-KEDAWKEDA);
+}
+
+:root {
+    --BLACK-KEDAWKEDA: #1C1C1C;
+    --GRAY: #5B5B5B;
+
+}
+
+.layer {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+section,
+footer {
+    text-align: center;
+    padding: 30px 0;
+    
+}
+@media screen {
+    
+}
+
+h2::before {
+    content: "";
+    background-image: url("../imgs/dots.png");
+    left: 0;
+    right: 0;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+h2.titlaia {
+    z-index: 2;
+    font-size: 40px;
+    line-height: 44px;
+    color: var(--BLACK-KEDAWKEDA);
+    font-weight: 900;
+    position: relative;
+    display: inline;
+    margin-bottom: 30px;
+}
+.navbar-brand:hover{transform: none;}
+ nav .nav-link,
+.nav-tabs .nav-link {
+    font-weight: bolder;
+    color: var(--BLACK-KEDAWKEDA);
+    transition: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav .nav-link.active,
+.nav-tabs .nav-link.active {
+    border: 0;
+    color: var(--BLACK-KEDAWKEDA);
+}
+
+nav .nav-link.active::after,
+.nav-tabs .nav-link.active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: var(--BLACK-KEDAWKEDA);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+section:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+.iconabgdark {
+    border: var(--BLACK-KEDAWKEDA) solid 1px;
+    color: white;
+    background-color: var(--BLACK-KEDAWKEDA);
+}
+
+.iconabglight {
+    background-color: white;
+    color: var(--BLACK-KEDAWKEDA)
+}
+
+.iconstyle .iconabgdark {
+    height: 30px;
+    width: 30px;
+    transition: 0.25s;
+}
+
+.iconstyle .iconabgdark:hover {
+    background-color: white;
+    color: var(--BLACK-KEDAWKEDA);
+}
+
+.iconstyle i {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+/* N A V  B A R */
+#navbarhead {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link,
+nav a {
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    font-weight: 400;
+}
+nav a:hover{color: white;}
+nav .nav-link.active::after,
+nav .nav-link::after {
+    background-color: white;
+}
+
+/* H O M E */
+#Home {
+    background-image: url("../imgs/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#Home #animation1::after {
+    font-weight: 300;
+    content: "Larry Daniels|";
+    /* animation: ani0 1s linear infinite, ani1 10s linear 0.9s infinite, ani2 10s linear 11s infinite, ani3 10s linear 21s infinite; */
+    animation: ani0 10s linear infinite;
+}
+
+@keyframes ani0 {
+    0.5% {
+        content: "Larry Danie|";
+    }
+
+    1% {
+        content: "Larry Dani|";
+    }
+
+    1.5% {
+        content: "Larry Dan|";
+    }
+
+    2% {
+        content: "Larry Da|";
+    }
+
+    2.5% {
+        content: "Larry D|";
+    }
+
+    3% {
+        content: "Larry |";
+    }
+
+    3.5% {
+        content: "Larry|";
+    }
+
+    4% {
+        content: "Larr|";
+    }
+
+    4.5% {
+        content: "Lar|";
+    }
+
+    5% {
+        content: "La|";
+    }
+
+    5.5% {
+        content: "L|";
+    }
+
+    6% {
+        content: "|";
+    }
+
+    6.5% {
+        content: "D|";
+    }
+
+    7% {
+        content: "De|";
+    }
+
+    7.5% {
+        content: "Dev|";
+    }
+
+    8% {
+        content: "Deve|";
+    }
+
+    8.5% {
+        content: "Devel|";
+    }
+
+    9% {
+        content: "Develo|";
+    }
+
+    9.5% {
+        content: "Develop|";
+    }
+
+    10% {
+        content: "Develope|";
+    }
+
+    10.5% {
+        content: "Developer|";
+    }
+
+    31% {
+        content: "Developer|";
+    }
+
+    31.5% {
+        content: "Develope|";
+    }
+
+    32% {
+        content: "Develop|";
+    }
+
+    32.5% {
+        content: "Develo|";
+    }
+
+    33% {
+        content: "Devel|";
+    }
+
+    33.5% {
+        content: "Deve|";
+    }
+
+    34% {
+        content: "Dev|";
+    }
+
+    34.5% {
+        content: "De|";
+    }
+
+    35% {
+        content: "D|";
+    }
+
+    35.5% {
+        content: "|";
+    }
+
+    36% {
+        content: "D|";
+    }
+
+    36.5% {
+        content: "De|";
+    }
+
+    37% {
+        content: "Des|";
+    }
+
+    37.5% {
+        content: "Desi|";
+    }
+
+    38% {
+        content: "Desig|";
+    }
+
+    38.5% {
+        content: "Design|";
+    }
+
+    39% {
+        content: "Designe|";
+    }
+
+    39.5% {
+        content: "Designer|";
+    }
+
+    60% {
+        content: "Designer|";
+    }
+
+    60.5% {
+        content: "Designe|";
+    }
+
+    61% {
+        content: "Design|";
+    }
+
+    61.5% {
+        content: "Desig|";
+    }
+
+    62% {
+        content: "Desi|";
+    }
+
+    62.5% {
+        content: "Des|";
+    }
+
+    63% {
+        content: "De|";
+    }
+
+    63.5% {
+        content: "D|";
+    }
+
+    64% {
+        content: "|";
+    }
+
+    64.5% {
+        content: "L|";
+    }
+
+    65% {
+        content: "La|";
+    }
+
+    65.5% {
+        content: "Lar|";
+    }
+
+    66% {
+        content: "Larr|";
+    }
+
+    66.5% {
+        content: "Larry|";
+    }
+
+    67% {
+        content: "Larry |";
+    }
+
+    67.5% {
+        content: "Larry D|";
+    }
+
+    68% {
+        content: "Larry Da|";
+    }
+
+    68.5% {
+        content: "Larry Dan|";
+    }
+
+    69% {
+        content: "Larry Dan|";
+    }
+
+    69.5% {
+        content: "Larry Dani|";
+    }
+
+    70% {
+        content: "Larry Danie|";
+    }
+
+    70.5% {
+        content: "Larry Daniel|";
+    }
+
+    71% {
+        content: "Larry Daniels|";
+    }
+
+    100% {
+        content: "Larry Daniels|";
+    }
+
+}
+
+@keyframes ani1 {
+    2.5% {
+        content: "Larry Danie|";
+    }
+
+    5% {
+        content: "Larry Dani|";
+    }
+
+    7.5% {
+        content: "Larry Dan|";
+    }
+
+    10% {
+        content: "Larry Da|";
+    }
+
+    12.5% {
+        content: "Larry D|";
+    }
+
+    15% {
+        content: "Larry |";
+    }
+
+    17.5% {
+        content: "Larry|";
+    }
+
+    20% {
+        content: "Larr|";
+    }
+
+    22.5% {
+        content: "Lar|";
+    }
+
+    25% {
+        content: "La|";
+    }
+
+    27.5% {
+        content: "L|";
+    }
+
+    30% {
+        content: "|";
+    }
+
+    32.5% {
+        content: "D|";
+    }
+
+    35% {
+        content: "De|";
+    }
+
+    37.5% {
+        content: "Dev|";
+    }
+
+    40% {
+        content: "Deve|";
+    }
+
+    42.5% {
+        content: "Devel|";
+    }
+
+    45% {
+        content: "Develo|";
+    }
+
+    47.5% {
+        content: "Develop|";
+    }
+
+    50% {
+        content: "Develope|";
+    }
+
+    50.5% {
+        content: "Developer|";
+    }
+
+    100% {
+        content: "Developer|";
+    }
+}
+
+@keyframes ani2 {
+    2.5% {
+        content: "Develope|";
+    }
+
+    5% {
+        content: "Develop|";
+    }
+
+    7.5% {
+        content: "Develo|";
+    }
+
+    10% {
+        content: "Devel|";
+    }
+
+    12.5% {
+        content: "Deve|";
+    }
+
+    15% {
+        content: "Dev|";
+    }
+
+    17.5% {
+        content: "De|";
+    }
+
+    20% {
+        content: "D|";
+    }
+
+    22.5% {
+        content: "|";
+    }
+
+    25% {
+        content: "D|";
+    }
+
+    27.5% {
+        content: "De|";
+    }
+
+    30% {
+        content: "Des|";
+    }
+
+    32.5% {
+        content: "Desi|";
+    }
+
+    35% {
+        content: "Desig|";
+    }
+
+    37.5% {
+        content: "Design|";
+    }
+
+    40% {
+        content: "Designe|";
+    }
+
+    42.5% {
+        content: "Designer|";
+    }
+
+    100% {
+        content: "Designer|";
+    }
+}
+
+@keyframes ani3 {
+
+    2.5% {
+        content: "Designer|";
+    }
+
+    5% {
+        content: "Designe|";
+    }
+
+    7.5% {
+        content: "Design|";
+    }
+
+    10% {
+        content: "Desig|";
+    }
+
+    12.5% {
+        content: "Desi|";
+    }
+
+    15% {
+        content: "Des|";
+    }
+
+    17.5% {
+        content: "De|";
+    }
+
+    20% {
+        content: "D|";
+    }
+
+    22.5% {
+        content: "|";
+    }
+
+    25% {
+        content: "L|";
+    }
+
+    27.5% {
+        content: "La|";
+    }
+
+    30% {
+        content: "Lar|";
+    }
+
+    32.5% {
+        content: "Larr|";
+    }
+
+    35% {
+        content: "Larry|";
+    }
+
+    37.5% {
+        content: "Larry |";
+    }
+
+    40% {
+        content: "Larry D|";
+    }
+
+    42.5% {
+        content: "Larry Da|";
+    }
+
+    45% {
+        content: "Larry Dan|";
+    }
+
+    47.5% {
+        content: "Larry Dan|";
+    }
+
+    50% {
+        content: "Larry Dani|";
+    }
+
+    52.5% {
+        content: "Larry Danie|";
+    }
+
+    55% {
+        content: "Larry Daniel|";
+    }
+
+    57.5% {
+        content: "Larry Daniels|";
+    }
+
+    100% {
+        content: "Larry Daniels|";
+    }
+}
+
+#Home i {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* A B O U T */
+#About h2::before {
+    content: none;
+}
+
+#About .col-lg-5::before {
+    content: "";
+    background-image: url(../imgs/dots.png);
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    bottom: -10px;
+    left: 20px;
+    z-index: -1;
+}
+
+#About img {
+    width: 90%;
+}
+
+#About .progress {
+    height: 23px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+#About .col-lg-7 :nth-child(4) .progress-bar {
+    width: 95%;
+}
+
+#About .col-lg-7 :nth-child(5) .progress-bar {
+    width: 80%;
+}
+
+#About .col-lg-7 :nth-child(6) .progress-bar {
+    width: 90%;
+}
+
+#About .progress-bar {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    /* color: #fff;
+    text-align: center; */
+    align-items: center;
+    white-space: wrap;
+    background-color: var(--BLACK-KEDAWKEDA);
+    transition: width .6s ease;
+}
+
+#About button.color-main-bg:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* S E R V I C E S */
+#Services i {
+    background-color: #F7F7F7;
+    height: 70px;
+    width: 70px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+
+#sarflex .col-lg-4 .iconabglight p {
+    font-size: small;
+}
+
+.iconabglight {
+    padding: 30px 15px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1)
+}
+
+#sarflex h3 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--BLACK-KEDAWKEDA);
+}
+
+#sarflex .col-lg-4 {
+    padding: 20px;
+}
+
+#sarflex .col-lg-4:hover .iconstyle .fa-xl {
+    color: white !important;
+    background-color: var(--BLACK-KEDAWKEDA) !important;
+}
+
+/* W O R K E S */
+
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: none;
+}
+
+
+#Works .layerhover {
+    opacity: 0;
+    margin: 5px;
+    top: 30px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    transition: all 0.5s;
+}
+
+#Works .col-lg-4 figure:hover .layerhover {
+    opacity: 1;
+    top: 0;
+}
+
+#Works .col-lg-4 figure:hover .layerhover h6 {
+    bottom: 0;
+}
+
+#Works .col-lg-4 figure:hover .layerhover .d-flex {
+    top: 0;
+}
+
+#Works h6,
+#Works .layerhover .d-flex {
+    position: relative;
+}
+
+#Works h6 {
+    bottom: 30px;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+#Works .layerhover .d-flex {
+    top: 30px;
+    transition: 0.5s;
+}
+
+/* T e s t i m o n i a l s */
+
+#Clients .carousel-indicators [data-bs-target] {
+    width: 8px;
+    margin: 40px 5px 0px;
+    height: 8px;
+    background-color: var(--GRAY);
+}
+
+#Clients .imgClients {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#Clients samp {
+    font-size: 10px;
+    line-height: 17px;
+    font-weight: 800;
+}
+
+/* c o u n t */
+#Count {
+    color: #343434;
+}
+
+#Count span {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 15px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+#Count p {
+    position: relative;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+#ani850::after {
+    content: "850";
+
+    animation: count-ani1 1s linear;
+}
+
+#ani230::after {
+    content: "230";
+    animation: count-ani2 1s linear;
+
+}
+
+#ani9450::after {
+    content: "9450";
+    animation: count-ani3 1s linear;
+
+}
+
+#ani780::after {
+    content: "780";
+    animation: count-ani4 1s linear;
+
+}
+
+@keyframes count-ani1 {
+    0% {
+        content: "		0	";
+    }
+
+    1% {
+        content: "		9	";
+    }
+
+    2% {
+        content: "		18	";
+    }
+
+    3% {
+        content: "		27	";
+    }
+
+    4% {
+        content: "		36	";
+    }
+
+    5% {
+        content: "		45	";
+    }
+
+    6% {
+        content: "		54	";
+    }
+
+    7% {
+        content: "		63	";
+    }
+
+    8% {
+        content: "		72	";
+    }
+
+    9% {
+        content: "		81	";
+    }
+
+    10% {
+        content: "		90	";
+    }
+
+    11% {
+        content: "		99	";
+    }
+
+    12% {
+        content: "		108	";
+    }
+
+    13% {
+        content: "		117	";
+    }
+
+    14% {
+        content: "		126	";
+    }
+
+    15% {
+        content: "		135	";
+    }
+
+    16% {
+        content: "		144	";
+    }
+
+    17% {
+        content: "		153	";
+    }
+
+    18% {
+        content: "		162	";
+    }
+
+    19% {
+        content: "		171	";
+    }
+
+    20% {
+        content: "		180	";
+    }
+
+    21% {
+        content: "		189	";
+    }
+
+    22% {
+        content: "		198	";
+    }
+
+    23% {
+        content: "		207	";
+    }
+
+    24% {
+        content: "		216	";
+    }
+
+    25% {
+        content: "		225	";
+    }
+
+    26% {
+        content: "		234	";
+    }
+
+    27% {
+        content: "		243	";
+    }
+
+    28% {
+        content: "		252	";
+    }
+
+    29% {
+        content: "		261	";
+    }
+
+    30% {
+        content: "		270	";
+    }
+
+    31% {
+        content: "		279	";
+    }
+
+    32% {
+        content: "		288	";
+    }
+
+    33% {
+        content: "		297	";
+    }
+
+    34% {
+        content: "		306	";
+    }
+
+    35% {
+        content: "		315	";
+    }
+
+    36% {
+        content: "		324	";
+    }
+
+    37% {
+        content: "		333	";
+    }
+
+    38% {
+        content: "		342	";
+    }
+
+    39% {
+        content: "		351	";
+    }
+
+    40% {
+        content: "		360	";
+    }
+
+    41% {
+        content: "		369	";
+    }
+
+    42% {
+        content: "		378	";
+    }
+
+    43% {
+        content: "		387	";
+    }
+
+    44% {
+        content: "		396	";
+    }
+
+    45% {
+        content: "		405	";
+    }
+
+    46% {
+        content: "		414	";
+    }
+
+    47% {
+        content: "		423	";
+    }
+
+    48% {
+        content: "		432	";
+    }
+
+    49% {
+        content: "		441	";
+    }
+
+    50% {
+        content: "		450	";
+    }
+
+    51% {
+        content: "		459	";
+    }
+
+    52% {
+        content: "		468	";
+    }
+
+    53% {
+        content: "		477	";
+    }
+
+    54% {
+        content: "		486	";
+    }
+
+    55% {
+        content: "		495	";
+    }
+
+    56% {
+        content: "		504	";
+    }
+
+    57% {
+        content: "		513	";
+    }
+
+    58% {
+        content: "		522	";
+    }
+
+    59% {
+        content: "		531	";
+    }
+
+    60% {
+        content: "		540	";
+    }
+
+    61% {
+        content: "		549	";
+    }
+
+    62% {
+        content: "		558	";
+    }
+
+    63% {
+        content: "		567	";
+    }
+
+    64% {
+        content: "		576	";
+    }
+
+    65% {
+        content: "		585	";
+    }
+
+    66% {
+        content: "		594	";
+    }
+
+    67% {
+        content: "		603	";
+    }
+
+    68% {
+        content: "		612	";
+    }
+
+    69% {
+        content: "		621	";
+    }
+
+    70% {
+        content: "		630	";
+    }
+
+    71% {
+        content: "		639	";
+    }
+
+    72% {
+        content: "		648	";
+    }
+
+    73% {
+        content: "		657	";
+    }
+
+    74% {
+        content: "		666	";
+    }
+
+    75% {
+        content: "		675	";
+    }
+
+    76% {
+        content: "		684	";
+    }
+
+    77% {
+        content: "		693	";
+    }
+
+    78% {
+        content: "		702	";
+    }
+
+    79% {
+        content: "		711	";
+    }
+
+    80% {
+        content: "		720	";
+    }
+
+    81% {
+        content: "		729	";
+    }
+
+    82% {
+        content: "		738	";
+    }
+
+    83% {
+        content: "		747	";
+    }
+
+    84% {
+        content: "		756	";
+    }
+
+    85% {
+        content: "		765	";
+    }
+
+    86% {
+        content: "		774	";
+    }
+
+    87% {
+        content: "		783	";
+    }
+
+    88% {
+        content: "		792	";
+    }
+
+    89% {
+        content: "		801	";
+    }
+
+    90% {
+        content: "		810	";
+    }
+
+    91% {
+        content: "		819	";
+    }
+
+    92% {
+        content: "		828	";
+    }
+
+    93% {
+        content: "		837	";
+    }
+
+    94% {
+        content: "		846	";
+    }
+
+    95% {
+        content: "		850	";
+    }
+
+    96% {
+        content: "		850	";
+    }
+
+    97% {
+        content: "		850	";
+    }
+
+    98% {
+        content: "		850	";
+    }
+
+    99% {
+        content: "		850	";
+    }
+
+    100% {
+        content: "		850	";
+    }
+}
+
+@keyframes count-ani2 {
+    0% {
+        content: "0";
+    }
+
+    1% {
+        content: "		3	";
+    }
+
+    2% {
+        content: "		6	";
+    }
+
+    3% {
+        content: "		9	";
+    }
+
+    4% {
+        content: "		12	";
+    }
+
+    5% {
+        content: "		15	";
+    }
+
+    6% {
+        content: "		18	";
+    }
+
+    7% {
+        content: "		21	";
+    }
+
+    8% {
+        content: "		24	";
+    }
+
+    9% {
+        content: "		27	";
+    }
+
+    10% {
+        content: "		30	";
+    }
+
+    11% {
+        content: "		33	";
+    }
+
+    12% {
+        content: "		36	";
+    }
+
+    13% {
+        content: "		39	";
+    }
+
+    14% {
+        content: "		42	";
+    }
+
+    15% {
+        content: "		45	";
+    }
+
+    16% {
+        content: "		48	";
+    }
+
+    17% {
+        content: "		51	";
+    }
+
+    18% {
+        content: "		54	";
+    }
+
+    19% {
+        content: "		57	";
+    }
+
+    20% {
+        content: "		60	";
+    }
+
+    21% {
+        content: "		63	";
+    }
+
+    22% {
+        content: "		66	";
+    }
+
+    23% {
+        content: "		69	";
+    }
+
+    24% {
+        content: "		72	";
+    }
+
+    25% {
+        content: "		75	";
+    }
+
+    26% {
+        content: "		78	";
+    }
+
+    27% {
+        content: "		81	";
+    }
+
+    28% {
+        content: "		84	";
+    }
+
+    29% {
+        content: "		87	";
+    }
+
+    30% {
+        content: "		90	";
+    }
+
+    31% {
+        content: "		93	";
+    }
+
+    32% {
+        content: "		96	";
+    }
+
+    33% {
+        content: "		99	";
+    }
+
+    34% {
+        content: "		102	";
+    }
+
+    35% {
+        content: "		105	";
+    }
+
+    36% {
+        content: "		108	";
+    }
+
+    37% {
+        content: "		111	";
+    }
+
+    38% {
+        content: "		114	";
+    }
+
+    39% {
+        content: "		117	";
+    }
+
+    40% {
+        content: "		120	";
+    }
+
+    41% {
+        content: "		123	";
+    }
+
+    42% {
+        content: "		126	";
+    }
+
+    43% {
+        content: "		129	";
+    }
+
+    44% {
+        content: "		132	";
+    }
+
+    45% {
+        content: "		135	";
+    }
+
+    46% {
+        content: "		138	";
+    }
+
+    47% {
+        content: "		141	";
+    }
+
+    48% {
+        content: "		144	";
+    }
+
+    49% {
+        content: "		147	";
+    }
+
+    50% {
+        content: "		150	";
+    }
+
+    51% {
+        content: "		153	";
+    }
+
+    52% {
+        content: "		156	";
+    }
+
+    53% {
+        content: "		159	";
+    }
+
+    54% {
+        content: "		162	";
+    }
+
+    55% {
+        content: "		165	";
+    }
+
+    56% {
+        content: "		168	";
+    }
+
+    57% {
+        content: "		171	";
+    }
+
+    58% {
+        content: "		174	";
+    }
+
+    59% {
+        content: "		177	";
+    }
+
+    60% {
+        content: "		180	";
+    }
+
+    61% {
+        content: "		183	";
+    }
+
+    62% {
+        content: "		186	";
+    }
+
+    63% {
+        content: "		189	";
+    }
+
+    64% {
+        content: "		192	";
+    }
+
+    65% {
+        content: "		195	";
+    }
+
+    66% {
+        content: "		198	";
+    }
+
+    67% {
+        content: "		201	";
+    }
+
+    68% {
+        content: "		204	";
+    }
+
+    69% {
+        content: "		207	";
+    }
+
+    70% {
+        content: "		210	";
+    }
+
+    71% {
+        content: "		213	";
+    }
+
+    72% {
+        content: "		216	";
+    }
+
+    73% {
+        content: "		219	";
+    }
+
+    74% {
+        content: "		222	";
+    }
+
+    75% {
+        content: "		225	";
+    }
+
+    76% {
+        content: "		228	";
+    }
+
+    77% {
+        content: "		230	";
+    }
+
+    78% {
+        content: "		230	";
+    }
+
+    79% {
+        content: "		230	";
+    }
+
+    80% {
+        content: "		230	";
+    }
+
+    81% {
+        content: "		230	";
+    }
+
+    82% {
+        content: "		230	";
+    }
+
+    83% {
+        content: "		230	";
+    }
+
+    84% {
+        content: "		230	";
+    }
+
+    85% {
+        content: "		230	";
+    }
+
+    86% {
+        content: "		230	";
+    }
+
+    87% {
+        content: "		230	";
+    }
+
+    88% {
+        content: "		230	";
+    }
+
+    89% {
+        content: "		230	";
+    }
+
+    90% {
+        content: "		230	";
+    }
+
+    91% {
+        content: "		230	";
+    }
+
+    92% {
+        content: "		230	";
+    }
+
+    93% {
+        content: "		230	";
+    }
+
+    94% {
+        content: "		230	";
+    }
+
+    95% {
+        content: "		230	";
+    }
+
+    96% {
+        content: "		230	";
+    }
+
+    97% {
+        content: "		230	";
+    }
+
+    98% {
+        content: "		230	";
+    }
+
+    99% {
+        content: "		230	";
+    }
+
+    100% {
+        content: "		230	";
+    }
+}
+
+@keyframes count-ani3 {
+    0% {
+        content: "		0	";
+    }
+
+    1% {
+        content: "		95	";
+    }
+
+    2% {
+        content: "		190	";
+    }
+
+    3% {
+        content: "		285	";
+    }
+
+    4% {
+        content: "		380	";
+    }
+
+    5% {
+        content: "		475	";
+    }
+
+    6% {
+        content: "		570	";
+    }
+
+    7% {
+        content: "		665	";
+    }
+
+    8% {
+        content: "		760	";
+    }
+
+    9% {
+        content: "		855	";
+    }
+
+    10% {
+        content: "		950	";
+    }
+
+    11% {
+        content: "		1045	";
+    }
+
+    12% {
+        content: "		1140	";
+    }
+
+    13% {
+        content: "		1235	";
+    }
+
+    14% {
+        content: "		1330	";
+    }
+
+    15% {
+        content: "		1425	";
+    }
+
+    16% {
+        content: "		1520	";
+    }
+
+    17% {
+        content: "		1615	";
+    }
+
+    18% {
+        content: "		1710	";
+    }
+
+    19% {
+        content: "		1805	";
+    }
+
+    20% {
+        content: "		1900	";
+    }
+
+    21% {
+        content: "		1995	";
+    }
+
+    22% {
+        content: "		2090	";
+    }
+
+    23% {
+        content: "		2185	";
+    }
+
+    24% {
+        content: "		2280	";
+    }
+
+    25% {
+        content: "		2375	";
+    }
+
+    26% {
+        content: "		2470	";
+    }
+
+    27% {
+        content: "		2565	";
+    }
+
+    28% {
+        content: "		2660	";
+    }
+
+    29% {
+        content: "		2755	";
+    }
+
+    30% {
+        content: "		2850	";
+    }
+
+    31% {
+        content: "		2945	";
+    }
+
+    32% {
+        content: "		3040	";
+    }
+
+    33% {
+        content: "		3135	";
+    }
+
+    34% {
+        content: "		3230	";
+    }
+
+    35% {
+        content: "		3325	";
+    }
+
+    36% {
+        content: "		3420	";
+    }
+
+    37% {
+        content: "		3515	";
+    }
+
+    38% {
+        content: "		3610	";
+    }
+
+    39% {
+        content: "		3705	";
+    }
+
+    40% {
+        content: "		3800	";
+    }
+
+    41% {
+        content: "		3895	";
+    }
+
+    42% {
+        content: "		3990	";
+    }
+
+    43% {
+        content: "		4085	";
+    }
+
+    44% {
+        content: "		4180	";
+    }
+
+    45% {
+        content: "		4275	";
+    }
+
+    46% {
+        content: "		4370	";
+    }
+
+    47% {
+        content: "		4465	";
+    }
+
+    48% {
+        content: "		4560	";
+    }
+
+    49% {
+        content: "		4655	";
+    }
+
+    50% {
+        content: "		4750	";
+    }
+
+    51% {
+        content: "		4845	";
+    }
+
+    52% {
+        content: "		4940	";
+    }
+
+    53% {
+        content: "		5035	";
+    }
+
+    54% {
+        content: "		5130	";
+    }
+
+    55% {
+        content: "		5225	";
+    }
+
+    56% {
+        content: "		5320	";
+    }
+
+    57% {
+        content: "		5415	";
+    }
+
+    58% {
+        content: "		5510	";
+    }
+
+    59% {
+        content: "		5605	";
+    }
+
+    60% {
+        content: "		5700	";
+    }
+
+    61% {
+        content: "		5795	";
+    }
+
+    62% {
+        content: "		5890	";
+    }
+
+    63% {
+        content: "		5985	";
+    }
+
+    64% {
+        content: "		6080	";
+    }
+
+    65% {
+        content: "		6175	";
+    }
+
+    66% {
+        content: "		6270	";
+    }
+
+    67% {
+        content: "		6365	";
+    }
+
+    68% {
+        content: "		6460	";
+    }
+
+    69% {
+        content: "		6555	";
+    }
+
+    70% {
+        content: "		6650	";
+    }
+
+    71% {
+        content: "		6745	";
+    }
+
+    72% {
+        content: "		6840	";
+    }
+
+    73% {
+        content: "		6935	";
+    }
+
+    74% {
+        content: "		7030	";
+    }
+
+    75% {
+        content: "		7125	";
+    }
+
+    76% {
+        content: "		7220	";
+    }
+
+    77% {
+        content: "		7315	";
+    }
+
+    78% {
+        content: "		7410	";
+    }
+
+    79% {
+        content: "		7505	";
+    }
+
+    80% {
+        content: "		7600	";
+    }
+
+    81% {
+        content: "		7695	";
+    }
+
+    82% {
+        content: "		7790	";
+    }
+
+    83% {
+        content: "		7885	";
+    }
+
+    84% {
+        content: "		7980	";
+    }
+
+    85% {
+        content: "		8075	";
+    }
+
+    86% {
+        content: "		8170	";
+    }
+
+    87% {
+        content: "		8265	";
+    }
+
+    88% {
+        content: "		8360	";
+    }
+
+    89% {
+        content: "		8455	";
+    }
+
+    90% {
+        content: "		8550	";
+    }
+
+    91% {
+        content: "		8645	";
+    }
+
+    92% {
+        content: "		8740	";
+    }
+
+    93% {
+        content: "		8835	";
+    }
+
+    94% {
+        content: "		8930	";
+    }
+
+    95% {
+        content: "		9025	";
+    }
+
+    96% {
+        content: "		9120	";
+    }
+
+    97% {
+        content: "		9215	";
+    }
+
+    98% {
+        content: "		9310	";
+    }
+
+    99% {
+        content: "		9405	";
+    }
+
+    100% {
+        content: "		9450	";
+    }
+
+}
+
+@keyframes count-ani4 {
+    0% {
+        content: "		0	";
+    }
+
+    1% {
+        content: "		8	";
+    }
+
+    2% {
+        content: "		16	";
+    }
+
+    3% {
+        content: "		24	";
+    }
+
+    4% {
+        content: "		32	";
+    }
+
+    5% {
+        content: "		40	";
+    }
+
+    6% {
+        content: "		48	";
+    }
+
+    7% {
+        content: "		56	";
+    }
+
+    8% {
+        content: "		64	";
+    }
+
+    9% {
+        content: "		72	";
+    }
+
+    10% {
+        content: "		80	";
+    }
+
+    11% {
+        content: "		88	";
+    }
+
+    12% {
+        content: "		96	";
+    }
+
+    13% {
+        content: "		104	";
+    }
+
+    14% {
+        content: "		112	";
+    }
+
+    15% {
+        content: "		120	";
+    }
+
+    16% {
+        content: "		128	";
+    }
+
+    17% {
+        content: "		136	";
+    }
+
+    18% {
+        content: "		144	";
+    }
+
+    19% {
+        content: "		152	";
+    }
+
+    20% {
+        content: "		160	";
+    }
+
+    21% {
+        content: "		168	";
+    }
+
+    22% {
+        content: "		176	";
+    }
+
+    23% {
+        content: "		184	";
+    }
+
+    24% {
+        content: "		192	";
+    }
+
+    25% {
+        content: "		200	";
+    }
+
+    26% {
+        content: "		208	";
+    }
+
+    27% {
+        content: "		216	";
+    }
+
+    28% {
+        content: "		224	";
+    }
+
+    29% {
+        content: "		232	";
+    }
+
+    30% {
+        content: "		240	";
+    }
+
+    31% {
+        content: "		248	";
+    }
+
+    32% {
+        content: "		256	";
+    }
+
+    33% {
+        content: "		264	";
+    }
+
+    34% {
+        content: "		272	";
+    }
+
+    35% {
+        content: "		280	";
+    }
+
+    36% {
+        content: "		288	";
+    }
+
+    37% {
+        content: "		296	";
+    }
+
+    38% {
+        content: "		304	";
+    }
+
+    39% {
+        content: "		312	";
+    }
+
+    40% {
+        content: "		320	";
+    }
+
+    41% {
+        content: "		328	";
+    }
+
+    42% {
+        content: "		336	";
+    }
+
+    43% {
+        content: "		344	";
+    }
+
+    44% {
+        content: "		352	";
+    }
+
+    45% {
+        content: "		360	";
+    }
+
+    46% {
+        content: "		368	";
+    }
+
+    47% {
+        content: "		376	";
+    }
+
+    48% {
+        content: "		384	";
+    }
+
+    49% {
+        content: "		392	";
+    }
+
+    50% {
+        content: "		400	";
+    }
+
+    51% {
+        content: "		408	";
+    }
+
+    52% {
+        content: "		416	";
+    }
+
+    53% {
+        content: "		424	";
+    }
+
+    54% {
+        content: "		432	";
+    }
+
+    55% {
+        content: "		440	";
+    }
+
+    56% {
+        content: "		448	";
+    }
+
+    57% {
+        content: "		456	";
+    }
+
+    58% {
+        content: "		464	";
+    }
+
+    59% {
+        content: "		472	";
+    }
+
+    60% {
+        content: "		480	";
+    }
+
+    61% {
+        content: "		488	";
+    }
+
+    62% {
+        content: "		496	";
+    }
+
+    63% {
+        content: "		504	";
+    }
+
+    64% {
+        content: "		512	";
+    }
+
+    65% {
+        content: "		520	";
+    }
+
+    66% {
+        content: "		528	";
+    }
+
+    67% {
+        content: "		536	";
+    }
+
+    68% {
+        content: "		544	";
+    }
+
+    69% {
+        content: "		552	";
+    }
+
+    70% {
+        content: "		560	";
+    }
+
+    71% {
+        content: "		568	";
+    }
+
+    72% {
+        content: "		576	";
+    }
+
+    73% {
+        content: "		584	";
+    }
+
+    74% {
+        content: "		592	";
+    }
+
+    75% {
+        content: "		600	";
+    }
+
+    76% {
+        content: "		608	";
+    }
+
+    77% {
+        content: "		616	";
+    }
+
+    78% {
+        content: "		624	";
+    }
+
+    79% {
+        content: "		632	";
+    }
+
+    80% {
+        content: "		640	";
+    }
+
+    81% {
+        content: "		648	";
+    }
+
+    82% {
+        content: "		656	";
+    }
+
+    83% {
+        content: "		664	";
+    }
+
+    84% {
+        content: "		672	";
+    }
+
+    85% {
+        content: "		680	";
+    }
+
+    86% {
+        content: "		688	";
+    }
+
+    87% {
+        content: "		696	";
+    }
+
+    88% {
+        content: "		704	";
+    }
+
+    89% {
+        content: "		712	";
+    }
+
+    90% {
+        content: "		720	";
+    }
+
+    91% {
+        content: "		728	";
+    }
+
+    92% {
+        content: "		736	";
+    }
+
+    93% {
+        content: "		744	";
+    }
+
+    94% {
+        content: "		752	";
+    }
+
+    95% {
+        content: "		760	";
+    }
+
+    96% {
+        content: "		768	";
+    }
+
+    97% {
+        content: "		776	";
+    }
+
+    98% {
+        content: "		780	";
+    }
+
+    99% {
+        content: "		780	";
+    }
+
+    100% {
+        content: "		780	";
+    }
+}
+
+/* T e a m */
+#Team .card,
+#Team .card-body {
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#Team .card-body {
+    background-color: #5B5B5B;
+}
+
+#Team .card-body h6 {
+    line-height:
+        27.5px;
+    font-size:
+        25px;
+    font-weight: 500;
+    color: white;
+}
+
+#Team .card-body p {
+    line-height:
+        22px;
+    font-size:
+        20px;
+    font-weight: 700;
+    color: white;
+
+
+}
+
+#Team figure {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+#Team .card .card-img-top {
+    transition: all 1s;
+}
+
+#Team .card figure:hover .card-img-top {
+    transform: scale(1.2);
+}
+
+#Team .layerhoverteam {
+    transform: scale(0.5) rotateY(180deg);
+    opacity: 0;
+    margin: 5px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    transition: all 0.5s;
+}
+
+#Team .card:hover .layerhoverteam {
+    transform: rotateY(360deg) scale(1);
+    opacity: 1;
+}
+
+#Team .iconstyle i {
+    width: 40px;
+    height: 40px;
+}
+
+/* c o n t a c t  */
+#Contact i {
+    background-color: #F7F7F7;
+    height: 60px;
+    width: 60px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+#Contact .iconstyle .iconabglight:hover {
+    color: white !important;
+    background-color: var(--BLACK-KEDAWKEDA) !important;
+}
+
+input,
+textarea,
+#Contact button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: RGB(244, 244, 244);
+}
+
+#Contact button {
+    background-color: var(--BLACK-KEDAWKEDA);
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* f o o t e r */
+
+footer {
+    background-color: var(--BLACK-KEDAWKEDA);
+    font-size: small;
+}
